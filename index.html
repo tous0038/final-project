@@ -5,35 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project - Andrea Tous</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/31883d2731.js" crossorigin="anonymous"></script>
+    <!--========== script for the seach button ==========-->
 </head>
 <body>
     <!--========== ORANGE SECTION ==========-->
     <header>
         <nav>
             <div class="container"> <!--=== Container ===-->
-              <img src="img/logo.png" alt="Three Star Media Logo">
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-              <form>
-                <input type="text" id="search" name="search">
-                <button><i class="fas fa-search"></i></button>
-              </form>
+              
+              <ul class="menu" >
+                  <li class="logo"><a href="#"><img src="img/logo.png" alt="Three Star Media Logo"> </a></li>
+                  <li class="item"><a href="#">Home</a></li>
+                  <li class="item"><a href="#">About Us</a></li>
+                  <li class="item"><a href="#">Services</a></li>
+                  <li class="item"><a href="#">Team</a></li>
+                  <li class="item"><a href="#">Contact</a></li>
+                  <li class="item button"><a href="#" 
+                    <form>
+                    <input type="text" id="search" name="search" placeholder="Search">
+                    <button><i class="fas fa-search"></i></button>
+                    </form></a></li>
+             </ul>
+             
             </div> <!--=== End container ===-->
         </nav>
-
+   
         <!--========== INTRO ==========-->
         <div class="intro">
-             <div class="container"> <!--=== Container ===-->
+             <div class="transbox"> <!--=== Container ===-->
+              <div class="texttransbox"> <!--=== Container ===-->
                  <h1>Welcome to Three Star Media</h1>
                  <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, rescusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!
                  </p>
-                 <button> Connect with us <span class="icon">&#9654;</span></button>
+                 <button class="connectb"> Connect with us <span class="icon">&#9654;</span></button>
+                </div> <!--=== End container ===-->
              </div> <!--=== End container ===-->
 
         </div>
@@ -47,11 +59,15 @@
 
         <!--=== ABOUT/ PINK SECTION ===-->
         <section class="about">
-            <div class="container"> <!--=== About container ===-->
-                <img src="img/about-us.jpg" alt="Ping pong table">
+            <div class="containerabout"> <!--=== About container ===-->
+                <img class="area1" src="img/about-us.jpg" alt="Ping pong table">
+              <div class="area2">
                 <h2>About Us</h2>
+              
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad? </p>
+                <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem? </p>
+              </div>
             </div> <!--=== End About container ===-->
         </section>  
         <!--=== End ABOUT/ PINK SECTION ===-->
@@ -59,135 +75,150 @@
         <!--=== SERVICES/GREEN with grid ===-->
         <section class="services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2 class="grid-item1">Our Services</h2>
 
-                <div class="grid-container"> <!--=== grid-container DIGITAL ===-->
+              <div class="grid-container"><!--=== grid-container General ===-->
+                <div class="grid-item2"> <!--=== grid-item DIGITAL ===-->
                     <img src="img/digital.jpg" alt="Cell Phone">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button> Digital Plans <span class="icon">&#9654;</span></button>
-                </div> <!--=== End grid-container DIGITAL ===-->
+                    <div class="servicesb">
+                      <button> Digital Plans <span class="icon">&#9654;</span></button>
+                    </div>
+                </div> <!--=== End grid-item DIGITAL ===-->
 
-                <div class="grid-container"> <!--=== grid-container MARKETING ===-->
+                <div class="grid-item3"> <!--=== grid-item MARKETING ===-->
                     <img src="img/marketing.jpg" alt="Computer">
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button> Marketing Plans <span class="icon">&#9654;</span></button>
-                </div> <!--=== End grid-container MARKETING ===-->
+                    <div class="servicesb">
+                      <button>  Marketing Plans <span class="icon">&#9654;</span></button>
+                    </div>                   
+                </div> <!--=== End grid-item MARKETING ===-->
 
-                <div class="grid-container"> <!--=== grid-container VIDEO PRODUCTION ===-->
+                <div class="grid-item4"> <!--=== grid-item VIDEO PRODUCTION ===-->
                     <img src="img/video.jpg" alt="Cell Phone in Youtube">
                     <h3>Video Production</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button> Video Plans <span class="icon">&#9654;</span></button>
-                </div> <!--=== End grid-container VIDEO PRODUCTION ===-->
+                    <div class="servicesb">
+                      <button>  Video Plans <span class="icon">&#9654;</span></button>
+                    </div>  
+                </div> <!--=== End grid-item VIDEO PRODUCTION ===-->
 
-                <div class="grid-container"> <!--=== grid-container WEB DEVELOPMENT ===-->
+                <div class="grid-item5"> <!--=== grid-item WEB DEVELOPMENT ===-->
                     <img src="img/web.jpg" alt="Cell Phone and notebook">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button> Web Plans <span class="icon">&#9654;</span></button>
-                </div> <!--=== End grid-container WEB DEVELOPMENT ===-->
+                    <div class="servicesb">
+                      <button>  Web Plans <span class="icon">&#9654;</span></button>
+                    </div> 
+                </div> <!--=== End grid-item WEB DEVELOPMENT ===-->
 
-                <div class="grid-container"> <!--=== grid-container PRINT ===-->
+                <div class="grid-item6"> <!--=== grid-item PRINT ===-->
                     <img src="img/print.jpg" alt="Newspaper boxes">
                     <h3>Print</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button> Print Plans <span class="icon">&#9654;</span></button>
-                </div> <!--=== End grid-container PRINT ===-->
-            </div>
+                    <div class="servicesb">
+                      <button>  Print Plans <span class="icon">&#9654;</span></button>
+                    </div> 
+                </div> <!--=== End grid-item PRINT ===-->
+              </div> <!--=== End grid-container ===-->
+            </div> <!--=== End Container ===-->
         </section>  
         <!--=== End SERVICES/GREEN with grid ===-->
 
         <!--=== OUR VISION/BLUE ===-->
-        <div class="vision">
+        <section class="vision">
+          <div class="vision1">
             <div class="container"> <!--=== Container ===-->
-                <h2>Our Vision</h2>
+                <h3>Our Vision</h3>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptatem deleniti iure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fugiat eaque. Veritatis exercitationem delectus ex ab laudantium.
                 </p>
+                <br>
                 <button> Learn More <span class="icon">&#9654;</span></button>
             </div> <!--=== End container ===-->
-
-       </div>
+         </div>
+       </section>
        <!--=== END OUR VISION/BLUE ===-->
 
        <!--=== TEAM/RED ===-->
        <section class="team">
-            <div class="container"> <!--=== container ===--> 
-                <h2>Our Team </h2>
-
-                <div class="grid-container"> <!--=== grid-container PHOTO JOHN ===-->
-                <img src="img/john.jpg" alt="Person">
-                </div> <!--=== End grid-container PHOTO JOHN ===-->
-
-                <div class="grid-container"> <!--=== grid-container JOHN ===-->
+           <h2>Our Team </h2>
+            <div class="grid-container"> <!--=== grid-container ===--> 
+              
+              <div class="grid-row"> <!--=== grid-row ===-->
+                <div class="grid-item--image"> <!--=== grid-item JOHN ===-->
+                    <img src="img/john.jpg" alt="John Doe">
+                </div> <!--=== End grid-item PHOTO JOHN ===-->
+                <div class="grid-item--text1"> <!--=== grid-item JOHN ===-->
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
+                    <br>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                </div> <!--=== End grid-container JOHN ===-->
+                </div> <!--=== End grid-item JOHN ===-->
+              </div><!--=== End grid-row ===-->
 
- 
-                <div class="grid-container"> <!--=== grid-container BOB ===-->
+              <div class="grid-row--reverse"> <!--=== grid-row reverse ===-->
+                <div class="grid-item--image"> <!--=== grid-item BOB ===-->
+                    <img src="img/bob.jpg" alt="Bob Rite">
+                </div> <!--=== End grid-item PHOTO BOB ===-->
+                <div class="grid-item--text2"> <!--=== grid-item BOB ===-->
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
+                    <br>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                </div> <!--=== End grid-container BOB ===-->
-
-                <div class="grid-container"> <!--=== grid-container PHOTO BOB ===-->
-                    <img src="img/bob.jpg" alt="Person">
-                </div> <!--=== End grid-container PHOTO BOB ===-->
-               
+                </div> <!--=== End grid-item BOB ===-->
+              </div><!--=== End grid-row reverse ===-->
             </div> <!--=== End container ===-->
        </section> 
        <!--=== End TEAM/RED ===-->
 
        <!--=== CONTACT ===-->
-       <section class="Contact">
-            <div class="container"> <!--=== container ===-->
-                <h2>Contact Us</h2>
+       <section class="contact">
+        <h2>Contact Us</h2>
+            <div class="grid-container"> <!--=== grid-container ===-->
+                
 
-                <div class="grid-container"><!--=== grid-container MESSAGE ===--> 
-                    <h3>Send us a message</h3>
-                 
+                <div class="grid-itemmessage"><!--=== grid-item MESSAGE ===--> 
+                  <h3>Send us a message</h3>
                   <form>
-                    <label for="fname">Full Name</label><br>
+                    <label class="fullnametext" for="fname">Full Name</label><br>
                     <input type="text" id="fname" name="fname"><br>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" ><br>
-
                     <label for="message">Message</label><br>
                     <textarea id="message" name="message" ></textarea><br>
+                    <button>Send</button>
                   </form>
+                </div> <!--=== End grid-item MESSAGE ===-->
 
-                  <form>
-                    <input type="submit" value="Send"><br>
-                  </form>
-                </div> <!--=== End grid-container MESSAGE ===-->
-
-                <div class="grid-container"><!--=== grid-container LOCATION ===--> 
-                  <h3>Location</h3>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426824!2d-75.7591114851141!3d45.34802197909973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617293528079!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div> <!--=== End grid-container LOCATION ===-->
-
-                <div class="grid-container"><!--=== grid-container HOURS ===--> 
+                <div class="grid-itemhours"><!--=== grid-item HOURS ===--> 
                     <h3>Hours of operation</h3>
                     <table>
+                      <thead>
                         <tr>
                           <th>Days</th>
                           <th>Hours</th>
                         </tr>
+                      </thead>
+                      <tbody>
                         <tr>
-                          <td>Monday-Friday</td>
-                          <td>9 AM-6 PM</td>
+                          <td>Monday - Friday</td>
+                          <td>9 AM - 6 PM</td>
                         </tr>
                         <tr>
-                          <td>Saturday-Sunday</td>
+                          <td>Saturday - Sunday</td>
                           <td>Closed</td>
                         </tr>
+                      </tbody> 
                     </table>
-                </div> <!--=== End grid-container HOURS ===-->
+                </div> <!--=== End grid-item HOURS ===-->
 
+                <div class="grid-itemlocation"><!--=== grid-item LOCATION ===--> 
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426824!2d-75.7591114851141!3d45.34802197909973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617293528079!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div> <!--=== End grid-item LOCATION ===-->
             </div> <!--=== End container ===-->
        </section> 
        <!--=== End CONTACT ===-->
@@ -197,7 +228,7 @@
     <!--========== YELLOW SECTION ==========-->
     <footer> 
         <p> &copy;Copyright Three Star Media, 2020 </p>
-        <p>All images are taken from Unsplash</p>
+        <p>All images are taken from <a href="https://Unsplash.com/">Unsplash</a></p>
     </footer>    
     <!--========== END YELLOW SECTION ==========-->
 </body>
