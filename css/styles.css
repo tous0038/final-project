@@ -56,7 +56,7 @@ body {
     background: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    
+    margin: 0 auto;
 }
 h1{
     font-size: 71px;
@@ -660,7 +660,8 @@ padding-bottom: 10px;
     .container, .grid-conainer {
         min-width:760px;
         max-width:1200px;    
-        
+        margin: 0 auto;     
+        padding: 0;
     }
 
     
